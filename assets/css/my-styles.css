@@ -92,17 +92,17 @@ body {
   button.special:hover,
   .button.special:hover {
     background-color: #346fa1;
+    box-shadow: 0 3px 3px #cccccc;
   }
 
   input[type="text"],
   input[type="password"],
   input[type="email"],
-  input::-webkit-input-placeholder,
   select,
   textarea {
     background: rgba(255, 255, 255, 0.1);
     border-color: #cccccc;
-    color: #222222;
+    color: #555;
   }
 
   input[type="text"]:focus,
@@ -120,17 +120,92 @@ body {
     }
 
 
+/* Czym jest measy */
+  .spotlight .image img {
+    width: 20em;
+  }
 
-  /* Czym jest demokryt */
-    .spotlight .image img {
-      width: 20em;
+  .icon.style1 {
+      color: #428bca;
     }
+  
+  #why-we > ul > li > p {
+    font-size: 18px;
+  }
 
+/* kluczowe cechy */
+  .statistics li.style1 {
+      background-color: #ccccaa;
+  }
 
+/* sekcja odkrywaj */
 
+  header.major p {
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+  }
 
+  #main input[type="submit"].special,
+  #main input[type="reset"].special, 
+  #main input[type="button"].special, 
+  #main button.special, 
+  #main .button.special {
+    background-color: #428bca;
+  }
 
+  #main input[type="submit"].special:hover, 
+  #main input[type="reset"].special:hover, 
+  #main input[type="button"].special:hover, 
+  #main button.special:hover, 
+  #main .button.special:hover {
+    background-color: #346fa1;
+  }
 
+  /* stopka */
+  #footer  p {
+    text-align: justify;
+  }
 
+  #footer > * {
+      width: calc(50% - 2em);
+      margin-left: 0em;
+  }
+
+  #footer > section:nth-child(2) {
+    margin-left: 4em;
+  }
+
+  #contact ::-webkit-input-placeholder { /* Chrome */
+    color: #999999 !important;
+  }
+  #contact :-ms-input-placeholder { /* IE 10+ */
+    color: #999999 !important;
+  }
+  #contact ::-moz-placeholder { /* Firefox 19+ */
+    color: #999999 !important;
+    opacity: 1 !important;
+  }
+  #contact :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #999999 !important;
+    opacity: 1 !important;
+  }
+  
+  #contact,
+  #contact label {
+    color: #555555;
+  }
+
+  #contact label:before {
+    border-color: #cccccc;
+  }
+
+  .icon.alt {
+    border-color: #555555;
+    color: #555555;
+  }
+
+  .icon.alt:hover {
+    background-color: rgba(85, 85, 85, 0.3);
+  }
 
 
