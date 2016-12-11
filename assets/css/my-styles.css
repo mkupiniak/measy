@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin-ext');
+
+
+body,
+input,
+select,
+textarea {
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background-color: #eeeeee;
+  background-image: url(https://subtlepatterns.com/patterns/brickwall.png);
+  color: #555555;
+}
+
+/* Header */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #555555;
+  }
+
+  #header p{
+    letter-spacing: normal;
+    color: #555555;
+  }
+
+/* Nav */
+  #nav {
+    background-color: #d6d6d6;
+    color: #555555;
+  }
+
+  #nav ul li a.active {
+    background-color: #eeeeee;
+    box-shadow: none;
+  }
+
+  #nav.alt {
+    background-color: #d6d6d6;
+    box-shadow: 0 2px 4px 0 #bebebe;
+  }
+
+  #nav ul li a:hover {
+    background-color: #eeeeee;
+  }
+
+
+
+/* Main */
+  #main {
+    box-shadow: 0 3px 0 0 #cccccc;
+  }
+
+  input[type="submit"].special,
+  input[type="reset"].special,
+  input[type="button"].special,
+  button.special,
+  .button.special {
+    background-color: #428bca;
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    background-color: #ffffff;
+    color: #000000 !important;
+    box-shadow: none;
+    transition: all 0.3s;
+  }
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px #cccccc;
+  }
+
+  input[type="submit"].special:hover,
+  input[type="reset"].special:hover,
+  input[type="button"].special:hover,
+  button.special:hover,
+  .button.special:hover {
+    background-color: #346fa1;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input::-webkit-input-placeholder,
+  select,
+  textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #cccccc;
+    color: #222222;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #428bca;
+    box-shadow: 0 0 0 1px #ccc;
+  }
+
+  #main header.major h2:after {
+    background-color: #428bca;
+    background-image: none;
+    }
+
+
+
+  /* Czym jest demokryt */
+    .spotlight .image img {
+      width: 20em;
+    }
+
+
+
+
+
+
+
+
+
