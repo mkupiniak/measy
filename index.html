@@ -11,7 +11,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <!-- slider -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
   <link rel="stylesheet" href="assets/css/my-styles.css" />
   <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -43,21 +46,27 @@
     <div id="main">
       <!-- Introduction -->
       <section id="intro" class="main">
-        <div class="spotlight">
-          <div class="content">
+        <div>
+          <div class="content floatfix">
             <header class="major">
               <h2>Czym jest Measy?</h2>
             </header>
-            <p>Measy pozwala Ci stworzyć i wykonać w drewnie własny herb. Zaprojektuj, zobacz i zatwierdź wizualizację 3D, a my zajmiemy się resztą. Wykonamy Twój własny herb z największą starannością na maszynach CNC.</p>
-            <p>Nasze rozwiązanie składa się z 3 elementów:</p>
+            <div class="what-is">
+              <p>Measy pozwala Ci stworzyć i wykonać w drewnie własny herb. Zaprojektuj, zobacz i zatwierdź wizualizację 3D, a my zajmiemy się resztą. Wykonamy Twój własny herb z największą starannością na maszynach CNC.</p>
+              <p>Nasze rozwiązanie składa się z 3 elementów:</p>
               <ol>
                 <li>Edytora - to w nim projektujesz swój przedmiot</li>
                 <li>Symulacji 3D - kiedy skończysz szkicować, zobacz jego realistyczną wizualizację</li>
                 <li>Wykonania na maszynach CNC - to na nich, sterowanych komputerowo wykonamy Twój projekt</li>
               </ol>
-            </p>
+            </div>
+            <div id="slickSlider" class="what-is">
+              <div><img src="assets/img/herb1.png" alt="Herb wykonany przez Measy"></div>
+              <div><img src="assets/img/herb2.png" alt="Herb wykonany przez Measy"></div>
+              <div><img src="assets/img/herb3.png" alt="Herb wykonany przez Measy"></div>
+            </div>
           </div>
-          <span class="image"><img src="http://www.cam-machine.com/wp-content/uploads/2015/01/CNC-Mill.jpg" alt="" /></span>
+          <!-- <span class="image"><img src="http://www.cam-machine.com/wp-content/uploads/2015/01/CNC-Mill.jpg" alt="" /></span> -->
         </div>
       </section>
       <!-- First Section -->
@@ -86,14 +95,14 @@
       <!-- Second Section -->
       <section id="key-features" class="main special">
         <header class="major">
-          <h2>Kluczowe cechy</h2>
+          <!-- <h2>Kluczowe cechy</h2> -->
           <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue
             <br /> posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
         </header>
         <ul class="statistics">
           <li class="style1">
             <span class="icon fa-laptop"></span>
-            <strong>3</strong> osoby w zespole 
+            <strong>3</strong> osoby w zespole
           </li>
           <li class="style1">
             <span class="icon fa-code-fork"></span>
@@ -177,8 +186,22 @@
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
+  <script src="assets/js/slick.min.js"></script>
   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
   <script src="assets/js/main.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#slickSlider').slick({
+      arrows: false,
+      autoplay: false,
+      speed: 1000,
+      autoplaySpeed: 2500,
+      dots: true,
+      cssEase: 'ease-in-out'
+    });
+    console.log('hello');
+  });
+  </script>
 </body>
 
 </html>
