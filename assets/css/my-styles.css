@@ -246,3 +246,72 @@ header.major p {
   float: left;
   width: 50%;
 }
+
+.statistics li {
+  padding: 1em 0.5em;
+}
+
+/*
+  MEDIA QUERY: 980 px
+*/
+
+@media screen and (max-width: 980px) {
+  #footer > *,
+  #footer > section:nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3em;
+  }
+  #social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  #footer .copyright {
+    text-align: center; 
+  }
+  #nav ul li a {
+    padding: 0 0.5em;
+  }
+}
+
+/*
+  MEDIA QUERY: 736 px
+*/
+
+@media screen and (max-width: 736px) {
+  .what-is {
+    width: 100%;
+    float: none;
+  }
+  #slickSlider {
+    display: none;
+  }
+  #intro h2 {
+    text-align: center;
+  }
+  #intro h2:after {
+    margin: 0.7em auto 1em;
+  }
+  #nav,
+  #nav ul li,
+  #nav ul li a {
+    display: block;
+    position: static;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+  #nav.alt {
+    width: calc(100% - 4em);
+  }
+}
+
+/*
+  MEDIA QUERY: 480 px
+*/
+@media screen and (max-width: 480px) {
+  #nav.alt {
+    width: calc(100% - 2em);
+  }
+}
+

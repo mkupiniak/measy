@@ -29,7 +29,7 @@
       <p>Najprostszy i najefektywniejszy sposób, aby frezować w drewnie</p>
       <ul class="actions">
         <li><a href="#do-aplikacji" class="button special">Rozpocznij</a></li>
-        <li><a href="learn-more.html" class="button">Czytaj więcej</a></li>
+        <li><a href="#intro" class="button">Czytaj więcej</a></li>
       </ul>
     </header>
     <!-- Nav -->
@@ -95,8 +95,8 @@
       <!-- Second Section -->
       <section id="key-features" class="main special">
         <header class="major">
-          <!-- <h2>Kluczowe cechy</h2> -->
-          <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue
+          <h2>Kluczowe cechy</h2>
+          <p>Prostota, przejrzystość i sprawność.
             <br /> posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
         </header>
         <ul class="statistics">
@@ -170,7 +170,7 @@
           </div>
         </form>
       </section>
-      <section style="margin-top: -5em;">
+      <section id="social">
         <ul class="icons">
           <li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
           <li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
@@ -193,13 +193,12 @@
   $(document).ready(function() {
     $('#slickSlider').slick({
       arrows: false,
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
       autoplaySpeed: 2500,
       dots: true,
       cssEase: 'ease-in-out'
     });
-    console.log('hello');
   });
   </script>
 </body>

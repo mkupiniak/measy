@@ -58,10 +58,10 @@
           },
         });
 
-      // Links.
-      var $nav_a = $nav.find('a');
+      // Links inside the page
+      var $links = $('[href^="#"]');
 
-      $nav_a
+      $links
         .scrolly({
           speed: 1000,
           offset: function() {
@@ -76,7 +76,7 @@
             return;
 
           // Deactivate all links.
-          $nav_a
+          $links
             .removeClass('active')
             .removeClass('active-locked');
 
@@ -112,9 +112,9 @@
               $section.removeClass('inactive');
 
               // No locked links? Deactivate all links and activate this section's one.
-              if ($nav_a.filter('.active-locked').length == 0) {
+              if ($links.filter('.active-locked').length == 0) {
 
-                $nav_a.removeClass('active');
+                $links.removeClass('active');
                 $this.addClass('active');
 
               }
@@ -135,7 +135,7 @@
       speed: 1000
     });
 
-    //Not a robot validation
+    // Not a robot validation
     var $notARobot = $('#demo-human');
     var $submitBtn = $('#demo-submit');
 
@@ -148,7 +148,22 @@
       }
 
     });
+
+    // showing and hiding menu on mobile
     
+    var $nav_a = $('#nav').find('a');
+    
+    $nav_a.on('click', function() {
+
+      if (window.innerWidth < 736) {
+        
+        console.log(window.innerWidth);
+        $('#nav').slideToggle();
+        console.log('bob');
+      }
+
+    });
+  
   });
 
 })(jQuery);
