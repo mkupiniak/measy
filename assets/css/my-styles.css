@@ -37,6 +37,9 @@ p {
 #nav {
   background-color: #d6d6d6;
   color: #555555;
+  position: static;
+  max-width: 100%;
+  display: block;
 }
 
 #nav ul li a.active {
@@ -53,6 +56,9 @@ p {
   background-color: #eeeeee;
 }
 
+#mobile {
+  display: none;
+}
 
 /* Main */
 
@@ -174,6 +180,10 @@ header.major p {
 
 /* stopka */
 
+#footer {
+  margin-bottom: 0;
+}
+
 #footer p {
   text-align: justify;
 }
@@ -251,11 +261,21 @@ header.major p {
   padding: 1em 0.5em;
 }
 
+#social {
+  width: 100%;
+  margin-top: 1em;
+}
+
+#social ul {
+  text-align: center;
+}
+
 /*
   MEDIA QUERY: 980 px
 */
 
 @media screen and (max-width: 980px) {
+  
   #footer > *,
   #footer > section:nth-child(2) {
     width: 100%;
@@ -293,16 +313,38 @@ header.major p {
   #intro h2:after {
     margin: 0.7em auto 1em;
   }
-  #nav,
-  #nav ul li,
+  #mobile {
+    display: block;
+    position: fixed;
+    top: 1em;
+    right: 1.2em;
+    z-index: 99999;
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+    border: 1px solid #aaa;
+  }
+  #mobile:hover {
+    cursor: pointer;
+    background-color: rgba(85,85,85,0.3);
+  }
+  #nav {
+    display: none;
+    margin-bottom: 1em;
+  }
+  #nav ul li {
+    display: block;
+    border-bottom: 1px solid #aaaaaa;
+  }
+  #nav ul li:first-child {
+    border-top: 1px solid #aaaaaa;
+  }
   #nav ul li a {
     display: block;
-    position: static;
-    margin-bottom: 1em;
+    margin: 0.5em 0;
     max-width: 100%;
   }
   #nav.alt {
-    width: calc(100% - 4em);
+    width: 75%;
   }
 }
 
@@ -311,7 +353,7 @@ header.major p {
 */
 @media screen and (max-width: 480px) {
   #nav.alt {
-    width: calc(100% - 2em);
+    width: 75%;
   }
 }
 

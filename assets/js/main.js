@@ -42,7 +42,7 @@
     });
 
     // Nav.
-    var $nav = $('#nav');
+    const $nav = $('#nav');
 
     if ($nav.length > 0) {
 
@@ -151,18 +151,20 @@
 
     // showing and hiding menu on mobile
     
-    var $nav_a = $('#nav').find('a');
-    
-    $nav_a.on('click', function() {
+    const $nav_mobile = $('#mobile');
+    $nav_mobile.on('click', function() {
 
-      if (window.innerWidth < 736) {
+      $('#nav').slideToggle();
         
-        console.log(window.innerWidth);
-        $('#nav').slideToggle();
-        console.log('bob');
-      }
-
     });
+
+    $(window).on('resize', function() {
+      if (window.innerWidth > 736) {
+        $nav.css('display', 'block');
+      } else {
+        $nav.css('display', 'none');
+      }
+    })
   
   });
 
